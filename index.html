@@ -1,0 +1,43 @@
+<!--
+File: index.html
+GUI Assignment: HW3
+Jacob George, UMass Lowell Computer Science,
+jacob_george@student.uml.edu
+Copyright (c) 2023 by Jacob George. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by JG on November 13th at 7:54pm
+Sources:
+https://www.w3schools.com/cssref/pr_border-color.php
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_validation_number
+https://www.geeksforgeeks.org/number-validation-in-javascript/#
+https://www.w3schools.com/jsref/event_preventdefault.asp
+https://www.altcademy.com/blog/how-to-get-user-input-in-javascript/#:~:text=and%20testing%20purposes.-,2.,accessed%20and%20manipulated%20using%20JavaScript.
+-->
+<html>
+<head>
+  <title>JavaScript Checkout Example</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="input">
+    <form onsubmit="processForm(event)"> <!-- used to get user input-->
+        <h1>Enter Minimum Column Value (Between -50 to 50)</h1> <!-- ask users to put in values for columns and rows-->
+        <input type="number" id="firstNumber" placeholder="Enter minimum column value">
+        <h2>Enter Maximum Column Value (Between -50 to 50)</h2>
+        <input type="number" id="secondNumber" placeholder="Enter maximum column value"><br>
+        <h3>Enter Minimum Row Value (Between -50 to 50)</h3>
+        <input type="number" id="thirdNumber" placeholder="Enter minimum row value"><br>
+        <h4>Enter Maximum Row Value (Between -50 to 50)</h4>
+        <input type="number" id="forthNumber" placeholder="Enter maximum row value"><br><br>
+        <input type="submit" value="Submit"><br>
+    </form>
+  </div>
+<div id="error-message"></div> <!-- will display error message-->
+<div id="multiplicationTableClass"> <!-- will display the multiplication table-->
+  <table id="multiplicationTable"> 
+    <tbody></tbody>
+  </table>
+</div>
+  <script src="js/javascript.js"></script>
+</body>
+</html>
